@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

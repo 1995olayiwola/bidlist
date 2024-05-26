@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.about_first,.about_second,.about_third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orange;
+    margin-bottom: 10px;
+}
+
+.about_h1{
+    background-color: orange;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.about_p{
+    margin: 10pxnpm start;
+}
