@@ -8,7 +8,7 @@ const TopHeader = () => {
 
       <ul>
 <Link><li>Advanced Search</li></Link>
-<Link><li>Indian Tenders</li></Link>
+<Link><li> Tenders</li></Link>
 <Link><li>Subscribe</li></Link>
 <Link><li>Contact US</li></Link>
 <Link><li>Sign In</li></Link>

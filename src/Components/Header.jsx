@@ -1,32 +1,90 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React,{useState} from 'react';
 import "./CSS/Header.css";
 import TopHeader from './TopHeader';
-import logo from "./bidconnect.png";
+import logo from './bidconnect.png';
+import {Link} from 'react-router-dom';
+import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+
+
 
 const Header = () => {
+  const [isMenu, setisMenu] = React.useState(false);
+  const [isResponsiveclose, setResponsiveclose] = useState(false);
+  const toggleClass = () => {
+    setisMenu(isMenu === false ? true : false);
+    setResponsiveclose(isResponsiveclose === false ? true : false);
+};
+
+  let boxClass = ["main-menu menu-right menuq1"];
+  if(isMenu) {
+      boxClass.push('menuq2');
+  }else{
+      boxClass.push('');
+  }
+
+  const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+    
+  const toggleSubmenu = () => {
+    setMenuSubMenu(isMenuSubMenu === false ? true : false);
+  };
+  
+  let boxClassSubMenu = ["sub__menus"];
+  if(isMenuSubMenu) {
+      boxClassSubMenu.push('sub__menus__Active');
+  }else {
+      boxClassSubMenu.push('');
+  }
+
   return (
-    <div className='container'>
-      <TopHeader/>
-      <div className='subHead'>
+    <header className="header__middle">
+        <div className="container">
+            <div className="row">
+
+                {/* Add Logo  */}
+                <div className="header__middle__logo">
+                    <Link exact activeClassName='is-active' to="/">
+                        <img src={logo} alt="logo" /> 
+                    </Link>
+                </div>
+
+                <div className="header__middle__menus">
+                    <nav className="main-nav " >
+
+                    {/* Responsive Menu Button */}
+                    {isResponsiveclose === true ? <> 
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
+                    </> : <> 
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
+                    </>}
+
+
+                    <ul className={boxClass.join(' ')}>
+                    <li  className="menu-item" >
+                        <Link exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Home </Link> 
+                    </li>
+                    <li className="menu-item " ><Link onClick={toggleClass} activeClassName='is-active' to={`/About`}> About </Link> </li>
+                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="/bidlist"> Bidlist <FiChevronDown /> </Link>
+                        <ul className={boxClassSubMenu.join(' ')} > 
+                            <li> <Link onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Online Shop </Link> </li>
+                            <li><Link onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </Link> </li>
+                        </ul>
+                    </li>
+                    <li className="menu-item " ><Link onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </Link> </li>
+
+                    </ul>
+
+
+                    </nav>     
+                </div>   
+
+
+
         
-      <img src={logo} alt="bidconnect" height="70px"/>
-      <ul className='headList'>
-      <Link to="/"><li>Home</li></Link>
-        <Link to="/about"><li>About US</li></Link>
-        <Link to="/bidlist"><li>Bid Lists</li></Link>
-        <Link to="/contact"><li>Contact Us</li></Link>
-        <Link to="/project"><li>Projects</li></Link>
-        <Link to="/tender"><li>Tenders</li></Link>
-        <Link to="/signup"><li>Create free account</li></Link>
-
-      </ul>
-
-      </div>
-      
         
-    </div>
-  )
-}
+            </div>
+	    </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
