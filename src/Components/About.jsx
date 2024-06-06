@@ -4,8 +4,10 @@ import "./CSS/About.css";
 
 const About = () => {
   return (
-    <div>
-      <Header/>
+    <>
+     <div>
+     <Header/>
+     </div>
       <div className='about_container'>
     <div className='about_page'>
       <div className="about_first">
@@ -59,7 +61,7 @@ const About = () => {
 
     </div>
     </div>
-    </div>
+    </>
   )
 }
 
