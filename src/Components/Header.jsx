@@ -70,7 +70,7 @@ const Header = () => {
                         </ul>
                     </li>
                     <li className="menu-item " ><Link onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </Link> </li>
-
+                    <li className="menu-item " ><Link onClick={toggleClass} activeClassName='is-active' to={`/project`}> Projects </Link> </li>
                     </ul>
 
 

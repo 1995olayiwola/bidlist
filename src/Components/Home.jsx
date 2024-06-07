@@ -3,12 +3,18 @@ import Header from './Header';
 import "./CSS/Home.css";
 
 
+
 const Home = () => {
   return (
-
-  
-    <div className='container'>
- <Header/>
+<>
+    <Header/>
+    
+    <div className='container_home'>
+ 
+    <div className='background'>
+  <h1>hi</h1>
+  </div>
+ 
 <div className='bidding_hub'>
   <h1>BIDDING HUB</h1>
   <p>
@@ -59,6 +65,7 @@ Join BidConnect today and revolutionize your construction experience. Let's buil
 <p>Email</p>
 </div>
     </div>
+    </>
   )
 }
 
