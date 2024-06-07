@@ -1,10 +1,27 @@
 import React from 'react';
 import Header from './Header';
+import './CSS/Bidlist.css'
 
 const Bidlists = () => {
   return (
     <div>
         <Header/>
+
+        <div className="project-list">
+      <h2 className="animated-heading">Available Projects</h2>
+      <div className="project-card">
+        <h3>Project ID: 181707</h3>
+        <h4>Project Title: BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN RHODE ISLAND.</h4>
+        <p>
+          COMPANY NAME: Razer Fintech<br />
+          Estimate: $5,000,000 - $7,000,000<br />
+          Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.<br />
+          Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities<br />
+          To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
+        </p>
+      </div>
+      {/* ... Repeat for other projects ... */}
+    </div>
         <p>
         Bond must be paid!!
 
