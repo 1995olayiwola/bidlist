@@ -3,85 +3,102 @@ import Header from './Header';
 import './CSS/Bidlist.css'
 
 const Bidlists = () => {
+  const projects = [
+    {
+      id: 181707,
+      title: 'BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN RHODE ISLAND.',
+      company: 'Razer Fintech',
+      estimate: '$5,000,000 - $7,000,000',
+      trades: [
+        'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.',
+        'Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities',
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    // ... Add data for other projects ...
+    {
+      id: 101790,
+      title: 'BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN FLORIDA.',
+      company: 'Razer Fintech.',
+      estimate: '$5,000,000 - $7,000,000',
+      trades: [
+        'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.',
+        'Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities',
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 707660,
+      title: 'SITE PREP FOR 1O ACRES OF LAND PROPOSED',
+      company: 'SITE PREP FOR 1O ACRES OF LAND PROPOSED .',
+      estimate: '$700,000 - $1,000,000.',
+      trades: [
+        ' *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping Rockscaping.',
+        
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 704922,
+      title: 'BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN OREGON',
+      company: 'SITE PREP FOR 1O ACRES OF LAND PROPOSED .',
+      estimate: '$700,000 - $1,000,000.',
+      trades: [
+        'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.',
+        'Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities',
+        
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 707941,
+      title: 'BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN OREGON',
+      company: 'SITE PREP FOR 1O ACRES OF LAND PROPOSED .',
+      estimate: '$700,000 - $1,000,000.',
+      trades: [
+        'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.',
+        'Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities',
+        
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+  ];
   return (
     <div>
         <Header/>
 
         <div className="project-list">
       <h2 className="animated-heading">Available Projects</h2>
-      <div className="project-card">
-        <h3>Project ID: 181707</h3>
-        <h4>Project Title: BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN RHODE ISLAND.</h4>
-        <p>
-          COMPANY NAME: Razer Fintech<br />
-          Estimate: $5,000,000 - $7,000,000<br />
-          Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.<br />
-          Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities<br />
-          To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
-        </p>
-      </div>
-      {/* ... Repeat for other projects ... */}
+      {projects.map((project) => (
+        <div key={project.id} className="project-card">
+          <h3>Project ID: {project.id}</h3>
+          <h4>Project Title: {project.title}</h4>
+          <p>
+            COMPANY NAME: {project.company}<br />
+            Estimate: {project.estimate}<br />
+            {project.trades.map((trade) => (
+              <span key={trade}>{trade}<br /></span>
+            ))}
+            {project.bidInstructions}
+          </p>
+        </div>
+      ))}
     </div>
         <p>
         Bond must be paid!!
 
 
-Project  ID: 181707
-
-Project TITLE:  BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE  IN RHODE ISLAND.
-
-COMPANY NAME: Razer Fintech
-
-Estimate: $5,000,000 - $7,000,000
-
-Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities. 
-Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
 
-Project ID: 101790
-
-Project TITLE: BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN FLORIDA.
-
-COMPANY NAME: Razer Fintech
-
-Estimate: $8,000,000 - $13,000,000
-
-Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.
-Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
 
-Project ID: 707660
-
-Project TITLE:  SITE PREP FOR 1O ACRES OF LAND PROPOSED  
-
-COMPANY NAME: Razer Fintech
-
-Estimate: $700,000 - $1,000,000.
-
-Trades: *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping Rockscaping
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
 
-Project ID: 704922
 
-Project TITLE: BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN OREGON
 
-COMPANY NAME: Razer Fintech
-
-Estimate: $5,000,000 - $7,000,000
-
-Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.
-Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
 

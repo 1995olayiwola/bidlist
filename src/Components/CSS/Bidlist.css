@@ -1,4 +1,6 @@
-.project-list {
+
+
+  .project-list {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
@@ -25,4 +27,5 @@
   .project-card h4 {
     margin-bottom: 10px;
   }
+  
   
