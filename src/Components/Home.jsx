@@ -66,10 +66,10 @@ happy clients successful projects satisfaction rate
 Join BidConnect today and revolutionize your construction experience. Let's build together! Explore our bids list and apply for your suitable bids.  BIDS LIST
 </div>
 <div className="contact-links">
-      <Link to={whatsappUrl} className="contact-link">
+      <a href="https://api.whatsapp.com/send/?phone=%2B13239275337&" className="contact-link">
        
-        <span>Whatsapp</span>
-      </Link>
+        <span >Whatsapp</span>
+      </a>
       <Link to="/contact" className="contact-link">
         <FontAwesomeIcon icon={faEnvelope} />
         <span>Email</span>
