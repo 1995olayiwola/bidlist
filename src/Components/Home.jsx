@@ -1,10 +1,16 @@
 import React from 'react';
 import Header from './Header';
 import "./CSS/Home.css";
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
 const Home = () => {
+  const whatsappNumber = '+13239275337';
+  const whatsappUrl = "https://api.whatsapp.com/send/?phone=+13239275337";
   return (
 <>
     <Header/>
@@ -59,11 +65,16 @@ happy clients successful projects satisfaction rate
 
 Join BidConnect today and revolutionize your construction experience. Let's build together! Explore our bids list and apply for your suitable bids.  BIDS LIST
 </div>
-<div>
-  <p>CONTACT US</p>
-<p>Whatsapp</p>
-<p>Email</p>
-</div>
+<div className="contact-links">
+      <Link to={whatsappUrl} className="contact-link">
+       
+        <span>Whatsapp</span>
+      </Link>
+      <Link to="/contact" className="contact-link">
+        <FontAwesomeIcon icon={faEnvelope} />
+        <span>Email</span>
+      </Link>
+    </div>
     </div>
     </>
   )

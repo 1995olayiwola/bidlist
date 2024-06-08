@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Parse from 'parse';
+import '@fortawesome/fontawesome-free/css/all.css'; // Free version
+
 
 Parse.initialize("properties_app");
 Parse.serverURL = "https://zeegold.onrender.com/parse";

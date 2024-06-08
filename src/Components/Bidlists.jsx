@@ -52,14 +52,52 @@ const Bidlists = () => {
     },
     {
       id: 707941,
-      title: 'BUILDING OF 1000 SITING CAPAITY OF SOFTWARE AND TECHNOLOGY TRAINING CENTRE IN OREGON',
-      company: 'SITE PREP FOR 1O ACRES OF LAND PROPOSED .',
-      estimate: '$700,000 - $1,000,000.',
+      title: 'RFP Rotary Park Restroom Building',
+      company: 'Razer Fintech.',
+      estimate: 'Open',
       trades: [
         'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.',
-        'Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities',
+        'Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities.',
         
       ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 708213,
+      title: 'Pricing and Delivery of Ready-Mix Concrete, Hagerstown, MD',
+      company: 'Razer Fintech.',
+      estimate: '$1,000,000 - $1,700,000',
+      trades: [
+        'Class A - *Suppliers, Portland Cement Concrete.',
+        'Class B - *Welfare Exp Limited is seeking quotations for the purchase and delivery of various types of ready-mix concrete on an as-needed basis. Delivery locations include, but are not limited to, areas within City limits, as well as Water and Wastewater service areas outside of City limits.',
+        
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 708122,
+      title: 'Deer Creek Conservation Area Conservation Landscape Planting, Harford Co., MD',
+      company: 'Vissa Gold',
+      
+      trades: [
+        'Class A - *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping Rockscaping, Tree Service Contractor: Trimming/Pruning Trees, Stump & Tree Removal/Rooting/Grinding',
+        'Class B - *Harford Cooperation is accepting bids for Deer Creek Conservation Area Conservation Landscape Planting. The project involves installation and maintenance of trees, shrubs, and tree protection devices within the Deer Creek Conservation Area. Bonds required.',
+        
+      ],
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 707930,
+      title: 'Pricing and Delivery of Ready-Mix Concrete, Hagerstown, MD',
+      company: 'Vissa Gold',
+      estimate: '$3,000,000 - $6,000,000',
+      trades: [
+        'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities, *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities, High Voltage Electrical Contractor (HVE): Power Lines, Street & Highway Lighting, Venues, Arenas, Utility, Transformers, Plumbing Contractor: Water Supply, Water Heaters, Water Meters, Leak Detection, Flow & Backflow, Acoustic Testing.',
+        'Class B - *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.'
+        
+        
+      ],
+      purpose: 'The purpose of this Invitation to Bid is for the Razer Fintech to contract for the Eagles Landing Golf Course Kitchen Remodel. The Work consists of +/- 400 sqft addition to the existing Eagles Landing clubhouse as well as interior renovations to the kitchen & grille, bathrooms and dining/bar area. Minor modifications to adjacent exterior courtyards, decks and circulation paths are also included. Bonds required.',
       bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
     },
   ];
@@ -79,6 +117,7 @@ const Bidlists = () => {
             {project.trades.map((trade) => (
               <span key={trade}>{trade}<br /></span>
             ))}
+            {project.purpose}
             {project.bidInstructions}
           </p>
         </div>
@@ -102,46 +141,12 @@ const Bidlists = () => {
 
 
 
-Project ID: 707941
-
-Project TITLE: RFP Rotary Park Restroom Building 
-
-COMPANY NAME: Razer Fintech
-
-Estimate: $1,000,000 - $1,700,000
-
-Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.
-Class B - *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities.
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
 
-Project ID: 708213
-
-Project TITLE:  Pricing and Delivery of Ready-Mix Concrete, Hagerstown, MD
-
-COMPANY NAME: Razer Fintech
-
-Estimate: Open
-
-Trades: Suppliers, Portland Cement Concrete.
-Welfare Exp Limited is seeking quotations for the purchase and delivery of various types of ready-mix concrete on an as-needed basis. Delivery locations include, but are not limited to, areas within City limits, as well as Water and Wastewater service areas outside of City limits.
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
-Project ID: 708122
 
-Project TITLE: Deer Creek Conservation Area Conservation Landscape Planting, Harford Co., MD
-
-COMPANY NAME: Vissa Gold
-
-Trades: *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping Rockscaping, Tree Service Contractor: Trimming/Pruning Trees, Stump & Tree Removal/Rooting/Grinding
-
-Harford Cooperation is accepting bids for Deer Creek Conservation Area Conservation Landscape Planting. The project involves installation and maintenance of trees, shrubs, and tree protection devices within the Deer Creek Conservation Area. Bonds required.
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
 
 
 

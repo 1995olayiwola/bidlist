@@ -102,5 +102,35 @@ body {
   to { opacity: 1; }
 }
 
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  transform: scale(1.1); /* Slight hover zoom */
+  color: #333; /* Darken text on hover */
+}
+
+.contact-link span {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-link .fa-icon {
+  font-size: 1.2rem; /* Adjust icon size as needed */
+}
   
   
