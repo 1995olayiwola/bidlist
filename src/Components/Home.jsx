@@ -3,14 +3,15 @@ import Header from './Header';
 import "./CSS/Home.css";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {  faEnvelope ,faHouse,faWhatsapp} from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 
 
 const Home = () => {
-  const whatsappNumber = '+13239275337';
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=+13239275337";
+  
   return (
 <>
     <Header/>
@@ -68,7 +69,9 @@ Join BidConnect today and revolutionize your construction experience. Let's buil
 <div className="contact-links">
       <a href="https://api.whatsapp.com/send/?phone=%2B13239275337&" className="contact-link">
        
-        <span >Whatsapp</span>
+      <span>Whatsapp</span>
+
+
       </a>
       <Link to="/contact" className="contact-link">
         <FontAwesomeIcon icon={faEnvelope} />

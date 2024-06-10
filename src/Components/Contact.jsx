@@ -1,7 +1,25 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import Header from './Header';
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div>
         <Header/>
@@ -21,25 +39,20 @@ const Contact = () => {
                   <div className="row">
                       <div className="col-lg-12">
                           <div className="row">
-                              <div className="col-lg-4">
+                              <div className="col-lg-6">
                                   <div className="contact-item">
                                       <i className="fas fa-envelope"></i>
                                       <h5>Mail</h5>
-                                      <h6>zeegoldinvestment@yahoo.com</h6>
+                                      <h6>info@bidconnect.org</h6>
+                                      <h6>reg@bidconnect.org</h6>
                                   </div>
                               </div>
-                              <div className="col-lg-4">
-                                  <div className="contact-item">
-                                      <i className="fas fa-map-marker-alt"></i>
-                                      <h5>Address</h5>
-                                      <h6>KLM 49 lekki Epe Expressway by elemoro police station, Lagos State.</h6>
-                                  </div>
-                              </div>
-                              <div className="col-lg-4">
+                             
+                              <div className="col-lg-6">
                                   <div className="contact-item">
                                       <i className="fas fa-phone-alt"></i>
                                       <h5>Phone</h5>
-                                      <h6>07025001968, 07025001969, 08024612082
+                                      <h6> +1 (323) 927 - 5337
 
                                       </h6>
                                   </div>
