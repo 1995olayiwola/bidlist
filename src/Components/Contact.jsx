@@ -8,18 +8,20 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_8tn0k3z', 'template_mjod82p', form.current, {
+        publicKey: 'FhATARpaLIl3p3f19',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          alert("Email sent successfully!")
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert("Failed!")
         },
       );
-  };
+    }
   return (
     <div>
         <Header/>
@@ -59,30 +61,31 @@ const Contact = () => {
                               </div>
                           </div>
                       </div>
+                      <form ref={form} onSubmit={sendEmail}>
                       <div className="col-lg-12">
                           <div className="row mt-5">
                               <div className="col-lg-6">
                                   <label>Name Surname</label>
-                                  <input type="text" className="inp-contact" />
+                                  <input type="text" className="inp-contact"  name="from_name" />
                               </div>
                               <div className="col-lg-6">
                                   <label>Phone</label>
-                                  <input type="text" className="inp-contact" />
+                                  <input type="text" className="inp-contact"  name="user_phone"/>
                               </div>
                               <div className="col-lg-12">
                                   <label>Subject</label>
-                                  <input type="text" className="inp-contact" />
+                                  <input type="text" className="inp-contact" name="user_email"/>
                               </div>
                               <div className="col-lg-12">
                                   <label>Message</label>
-                                  <textarea type="text" className="ta-contact" rows="4"></textarea>
+                                  <textarea type="text" className="ta-contact" rows="4" name="message"></textarea>
                               </div>
                               <div className="col-lg-12">
-                                  <button className="btn-contact">Send Message</button>
+                                  <button className="btn-contact" value="Send">Send Message</button>
                               </div>
                           </div>
                       </div>
-
+                      </form>
                   </div>
               </div>
           </div>
