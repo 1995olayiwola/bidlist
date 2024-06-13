@@ -145,20 +145,34 @@ body {
 }
 
 .bidding_hub {
-  background-image: url("../images/client\ success\ pic.jpeg"); /* Replace with your image filename */
+  background-image: url("../images/client\ success\ pic.jpeg"); /* Replace with correct filename */
   background-size: cover;
   text-align: center;
-  color: white;
   padding: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  /* Add transition for background color change on hover */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Combined transition */
+}
+
+.bidding_hub h1,
+.bidding_hub p {
+  color: white; /* White text for better visibility on the image */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+  animation: text-shadow-pulse 2s ease-in-out infinite alternate; /* Animate text shadow */
 }
 
 .bidding_hub:hover {
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add subtle box-shadow on hover */
 }
+
+/* Define Animations */
+@keyframes text-shadow-pulse {
+  from { text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  to { text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
+}
+
+
 
 
 @keyframes slide-in {
