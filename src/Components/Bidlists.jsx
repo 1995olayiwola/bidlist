@@ -97,9 +97,79 @@ const Bidlists = () => {
         
         
       ],
-      purpose: 'The purpose of this Invitation to Bid is for the Razer Fintech to contract for the Eagles Landing Golf Course Kitchen Remodel. The Work consists of +/- 400 sqft addition to the existing Eagles Landing clubhouse as well as interior renovations to the kitchen & grille, bathrooms and dining/bar area. Minor modifications to adjacent exterior courtyards, decks and circulation paths are also included. Bonds required.',
+     
       bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
     },
+    {
+      id: 708141,
+      title: 'Construction of Two Step Boulevard - Mound Creek Segment, Conroe, TX',
+      company: 'Razer Fintech',
+      estimate: '$3,000,000 - $6,000,000',
+      trades: [
+        'Class A -*General Engineering Contractor GEC; Subcontractor Opportunities, Highway, Roads, Parking Lot, Bridge, Dam, Overpass, Runways: Road Improvement/Pavement/Resurface - NAICS 237310, Pipeline Contractor: Water Mains, Sewers, Drains & Pipe Laying + Related Structures; Includes Pipe Inspection Camera, Roadway Drainage, Stormwater, Manhole Covers & Valve Boxes, Culverts: Installation, Repair & Removal, Stormwater Pollution Prevention Plan (SWPP) - Regional Flood Planning Group (RFPG) - Flood Risk Reduction Plans, Pavement Marking, Traffic Striping, Raised Pavement Markers (RPMs) & Reflectors - General Engineering Contractor, Electrical Signs & Signage Contractor: Exterior Advertising or Wayfinding',
+        
+        
+        
+      ],
+      purpose:' The base bid work consists of providing the necessary labor, materials, equipment and supervision to construct Two Step Boulevard - Mound Creek Segment including but not limited to, mobilization, bonds and insurance; construction of approximately 0.9 miles of asphalt roadway and associated roadside ditch/storm sewer infrastructure for drainage; MSE retaining wall, a 3,000 linear foot bridge; stormwater pollution prevention; pavement markings and signage. Bonds required. Prevailing wages.',
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 708124,
+      title: 'Landscape Development,  Proposed Razer facility in El Paso Co., TX',
+      company: 'Razer Fintech',
+      estimate: '$4,400,000',
+      trades: [
+        'Class A -*Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping Rockscaping, *General Engineering Contractor GEC; Subcontractor Opportunities',
+        
+        
+        
+      ],
+     purpose:'This project consists of the construction of Aesthetics and Landscape improvements at scattered locations along IH-10 in from FM-2316 (McRae Blvd) to Don Haskins Drive in El Paso County, Texas. The work includes construction of different type of planters, install ornamental metal structures, removal of vegetation, cap irrigation system, landscape amenities, installation of LED illumination, plant schemes, irrigation system, riprap and paint new planters and existing rip rap. DBE Goal: 0% Bonds required.',
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 707013,
+      title: 'Oak & Red Oak  Construction of Fire Suppression on 10,000sqm of land, NJ',
+      company: 'Oak & Viza ',
+      estimate: '$4,400,000',
+      trades: [
+        'Class A -*General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities, Plumbing Contractor: Water Supply, Water Heaters, Water Meters, Leak Detection, Flow & Backflow, Acoustic Testing, Water Supply & Irrigation Contractor: May include Backflow Testing, Water Sprinkler Systems for Landscaping',
+        'Class B - *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.'
+        
+        
+      ],
+     purpose:'Oak & Red Oak Fire Suppression Construction NJ',
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 707013,
+      title: 'Oak & Red Oak  Construction of Fire Suppression on 10,000sqm of land, NJ',
+      company: 'Oak & Viza ',
+      estimate: '$10,000,000',
+      trades: [
+        'Class A -*General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities, Plumbing Contractor: Water Supply, Water Heaters, Water Meters, Leak Detection, Flow & Backflow, Acoustic Testing, Water Supply & Irrigation Contractor: May include Backflow Testing, Water Sprinkler Systems for Landscaping',
+        'Class B - *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.'
+        
+        
+      ],
+     purpose:'Oak & Red Oak Fire Suppression Construction NJ',
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    },
+    {
+      id: 117097,
+      title: '1000 ACRES SITE PREPERATION FOR A PROPOSED ESTATE BY BILTMORE REALTORS',
+      company: 'Razer Fintech',
+      estimate: 'Open',
+      trades: [
+        'Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.',
+        'Class B - *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.'
+        
+        
+      ],
+     
+      bidInstructions: 'To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.',
+    }
   ];
   return (
     <div>
@@ -123,117 +193,7 @@ const Bidlists = () => {
         </div>
       ))}
     </div>
-        <p>
-        Bond must be paid!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Project ID: 707930
-
-Project TITLE:  Eagles Landing Golf Course Extension, Berlin, MD
-
-COMPANY NAME: Vissa Gold
-
-Trades: *General Engineering Contractor GEC; Subcontractor Opportunities, *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities, High Voltage Electrical Contractor (HVE): Power Lines, Street & Highway Lighting, Venues, Arenas, Utility, Transformers, Plumbing Contractor: Water Supply, Water Heaters, Water Meters, Leak Detection, Flow & Backflow, Acoustic Testing.
-
-Trades: *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.
-
-The purpose of this Invitation to Bid is for the Razer Fintech to contract for the Eagles Landing Golf Course Kitchen Remodel. The Work consists of +/- 400 sqft addition to the existing Eagles Landing clubhouse as well as interior renovations to the kitchen & grille, bathrooms and dining/bar area. Minor modifications to adjacent exterior courtyards, decks and circulation paths are also included. Bonds required.
-
-Estimate:  $3,000,000 - $6,000,000
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
-
-
-
-
-Project ID: 708141
-
-Project TITLE: Construction of Two Step Boulevard - Mound Creek Segment, Conroe, TX
-
-COMPANY NAME: Razer Fintech
-
-Trades: *General Engineering Contractor GEC; Subcontractor Opportunities, Highway, Roads, Parking Lot, Bridge, Dam, Overpass, Runways: Road Improvement/Pavement/Resurface - NAICS 237310, Pipeline Contractor: Water Mains, Sewers, Drains & Pipe Laying + Related Structures; Includes Pipe Inspection Camera, Roadway Drainage, Stormwater, Manhole Covers & Valve Boxes, Culverts: Installation, Repair & Removal, Stormwater Pollution Prevention Plan (SWPP) - Regional Flood Planning Group (RFPG) - Flood Risk Reduction Plans, Pavement Marking, Traffic Striping, Raised Pavement Markers (RPMs) & Reflectors - General Engineering Contractor, Electrical Signs & Signage Contractor: Exterior Advertising or Wayfinding
-
-The base bid work consists of providing the necessary labor, materials, equipment and supervision to construct Two Step Boulevard - Mound Creek Segment including but not limited to, mobilization, bonds and insurance; construction of approximately 0.9 miles of asphalt roadway and associated roadside ditch/storm sewer infrastructure for drainage; MSE retaining wall, a 3,000 linear foot bridge; stormwater pollution prevention; pavement markings and signage. Bonds required. Prevailing wages.
-
-Estimate: $3,000,000 - $6,000,000
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
-
-
-
-Project ID:  708124
-
-Project TITLE:  Landscape Development,  Proposed Razer facility in El Paso Co., TX
-
-COMPANY NAME: Razer Fintech
-
-Trades: *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping Rockscaping, *General Engineering Contractor GEC; Subcontractor Opportunities
-
-This project consists of the construction of Aesthetics and Landscape improvements at scattered locations along IH-10 in from FM-2316 (McRae Blvd) to Don Haskins Drive in El Paso County, Texas. The work includes construction of different type of planters, install ornamental metal structures, removal of vegetation, cap irrigation system, landscape amenities, installation of LED illumination, plant schemes, irrigation system, riprap and paint new planters and existing rip rap. DBE Goal: 0% Bonds required.
-
-Estimate: $4,400,000
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
-
-
-
-
-Project ID: 707013
-
-Project TITLE:  Oak & Red Oak  Construction of Fire Suppression on 10,000sqm of land, NJ
-
-COMPANY NAME: Oak & Viza 
-
-Trades: *General Building Contractor GBC: Building Construction Services, Subcontractor Opportunities, Plumbing Contractor: Water Supply, Water Heaters, Water Meters, Leak Detection, Flow & Backflow, Acoustic Testing, Water Supply & Irrigation Contractor: May include Backflow Testing, Water Sprinkler Systems for Landscaping
-
-Trades: *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.
-
-Oak & Red Oak Fire Suppression Construction NJ
-
-Estimate: $10,000,000
-
-contact iangavelek@gmail.com
-
-
-
-
-Project ID: 117097
-
-Project TITLE:  1000 ACRES SITE PREPERATION FOR A PROPOSED ESTATE BY BILTMORE REALTORS
-
-COMPANY NAME: Razer Fintech.
-
-Trades: Class A - *General Engineering Contractor GEC; Subcontractor Opportunities.
-Class B - *Landscaping Contractor: Grounds Maintenance Grubbing Fertilizing Sodding Lawn Mowing Rooting Mulch Hardscaping.
-
-Estimate: Open
-
-To submit a bid, kindly send us a message referring to the project ID and submit your phone contact.
-        </p>
+       
     </div>
   )
 }
