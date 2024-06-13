@@ -9,7 +9,7 @@ body{
 
 
 .exclusive,.image{
-    background-image: url("../images/exclusive\ access.jpeg");
+   /* background-image: url("../images/exclusive\ access.jpeg");*/
 }
 .client_success{
     background-image: url("../images/client\ success\ pic.jpeg");
@@ -74,7 +74,7 @@ body {
  .exclusive{
   font-size: larger;
   font-weight: bolder;
-  color:white;
+  color:black;
  }
   
   .exclusive p {
@@ -167,7 +167,7 @@ body {
 }
 
 .exclusive,.image {
-  background-image: url("../images/exclusive\ access.jpeg");
+ /*background-image: url("../images/exclusive\ access.jpeg");*/
   animation: slide-in-left 1s ease-in-out;
   transition: background-color 0.3s ease;
 }
@@ -231,4 +231,35 @@ body {
 @keyframes slide-up {
   from { opacity: 0; transform: translateY(50px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Animation for counter elements */
+  animation: count-up 2s ease-in-out forwards;
+}
+
+.rate span {
+  font-size: 36px;
+  color: orange;
+  /* Transition for color change on hover */
+  transition: color 0.3s ease;
+}
+
+.rate span:hover {
+  color: #f08000; /* Orange with a slight red tint on hover */
+}
+
+/* Define Animation */
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly upwards */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Animate to original position */
+  }
 }

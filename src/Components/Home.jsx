@@ -62,10 +62,15 @@ HOME OF SITE PREP JOB OPPORTUNITIES
 <div className='exclusive'>
   <h1>Exclusive Access</h1>
   <p>Gain exclusive access to top-tier clients and contractors and secure your project's success with our premium matchmaking service. Contact us to get linked in.</p>
-  600+              300+                 94%
-happy clients successful projects satisfaction rate
+  <div className='rate'>
+    <span>600+ </span>
+    <span>300+ </span>
+    <span>  94%</span>
+    </div>                           
+<p>happy clients successful projects satisfaction rate</p>
 
-Join BidConnect today and revolutionize your construction experience. Let's build together! Explore our bids list and apply for your suitable bids.  BIDS LIST
+<p>Join BidConnect today and revolutionize your construction experience. </p>
+  <p>Let's build together! Explore our bids list and apply for your suitable bids.</p>
 </div>
 <div className="contact-links">
       <a href="https://api.whatsapp.com/send/?phone=%2B13239275337&" className="contact-link">
