@@ -7,10 +7,8 @@ body{
     position: relative;
 }
 
-.container_home{
-    margin: 20px;
-}
-.exclusive{
+
+.exclusive,.image{
     background-image: url("../images/exclusive\ access.jpeg");
 }
 .client_success{
@@ -28,6 +26,8 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+    animation: slide-in-left 1s ease-in-out; /* Animation for container */
+  transition: background-color 0.3s ease;
   }
   
   h1, h2, h3 {
@@ -71,11 +71,11 @@ body {
     font-size: 1.2em;
   }
   
-  .exclusive {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+ .exclusive{
+  font-size: larger;
+  font-weight: bolder;
+  color:white;
+ }
   
   .exclusive p {
     flex: 1;
@@ -132,5 +132,103 @@ body {
 .contact-link .fa-icon {
   font-size: 1.2rem; /* Adjust icon size as needed */
 }
-  
-  
+
+.bidding_hub,
+.our_story,
+.trilled,
+.company_name,
+.meet_us,
+.instant_matches,
+.client_success,
+.exclusive {
+  animation: slide-in 1s ease-in-out;
+}
+
+.bidding_hub {
+  background-image: url("../images/client\ success\ pic.jpeg"); /* Replace with your image filename */
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* Add transition for background color change on hover */
+  transition: background-color 0.3s ease;
+}
+
+.bidding_hub:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black on hover */
+}
+
+
+@keyframes slide-in {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.exclusive,.image {
+  background-image: url("../images/exclusive\ access.jpeg");
+  animation: slide-in-left 1s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.client_success {
+  background-image: url("../images/client\ success\ pic.jpeg");
+  animation: slide-in-right 1s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.bidding_hub {
+  animation: fade-in 1s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.our_story {
+  animation: fade-up 1s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.trilled,
+.company_name,
+.meet_us,
+.instant_matches {
+  animation: scale-in 1s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.contact-links {
+  animation: slide-up 1s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+/* Define Animations */
+
+@keyframes slide-in-left {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}

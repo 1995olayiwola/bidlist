@@ -43,7 +43,7 @@ const Header = () => {
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
                     <Link exact activeClassName='is-active' to="/">
-                        <img src={logo} alt="logo" /> 
+                    <img src={logo} alt="logo" /> 
                     </Link>
                 </div>
 
@@ -65,8 +65,9 @@ const Header = () => {
                     <li className="menu-item " ><Link onClick={toggleClass} activeClassName='is-active' to={`/About`}> About </Link> </li>
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="/bidlist"> Bidlist <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
-                            <li> <Link onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Online Shop </Link> </li>
-                            <li><Link onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </Link> </li>
+                            <li> <Link onClick={toggleClass} activeClassName='is-active'  to={`/uk`}> UK </Link> </li>
+                            <li><Link onClick={toggleClass} activeClassName='is-active' to={`/us`}> US </Link> </li>
+                            <li><Link onClick={toggleClass} activeClassName='is-active' to={`/ca`}> Canada </Link> </li>
                         </ul>
                     </li>
                     <li className="menu-item " ><Link onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </Link> </li>

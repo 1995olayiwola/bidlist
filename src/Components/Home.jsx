@@ -14,13 +14,14 @@ const Home = () => {
   
   return (
 <>
-    <Header/>
+<div>
+<Header/>
+</div>
+   
     
     <div className='container_home'>
  
-    <div className='background'>
-  <h1>hi</h1>
-  </div>
+   <div className='image'></div>
  
 <div className='bidding_hub'>
   <h1>BIDDING HUB</h1>
