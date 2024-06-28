@@ -39,9 +39,15 @@ HOME OF SITE PREP JOB OPPORTUNITIES
 </div>
 <div className='trilled'>
   <h1>Thrilled</h1>
-  <p>Emily Johnson (COMPANY NAME)</p>
+  <p>Emily Johnson (Jigh Risk Pregnancy Center)</p>
   <p>Incredible service, saved me time and money!
 </p>
+<p>Diana Waish (The Diana Initiative)</p>
+<p>Best decision I made for my project, highly recommend!</p>
+<p>John Henderson (Majestic courier c0mpany)</p>
+<p>We got the best and fastest project team ever, we are impressed.</p>
+<p>Philippe Laturo (Maxwell Contruction)</p>
+<p>As a site prep contractor, I was able got my biggest project from bidconnect and I am on my second project right now , it is worth it.</p>
 </div>
 <div className='company_name'>
   <h1>(Company Name)</h1>
