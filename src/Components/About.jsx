@@ -13,20 +13,24 @@ const About = () => {
       <div className="about_first">
       <h1 className='about_h1'>The Gateway to International Public Procurement</h1>
 
-<p className='about_p'>BidConnect a brand owned by Eucled Infotech Private Limited is world's one of the largest Public Procurement Support Services/Consulting company. With most comprehensive database of International Tenders, Projects, Contract Award from Multilateral Funding agencies, Utilities sector, Hospitals, Schools, Ports, NGO's. In addition, it also offers market & Company Intelligence information, Bid Outsourcing, Bid Advisory & E-procurement support as its major service offerings supporting SME's to Fortune 500 companies world over.
-</p>
+<p className='about_p'>BidConnect a brand owned by Razer Fintech & Infotech Private Limited is world's one of the largest Public Procurement Support Services/Consulting company. With most comprehensive database of International Tenders, Projects, Contract Award from Multilateral Funding agencies, Utilities sector, Hospitals, Schools, Ports, NGO's. In addition, it also offers market & Company Intelligence information, Bid Outsourcing, Bid Advisory & E-procurement support as its major service offerings supporting SME's to Fortune 500 companies world over.</p>
 <ul>
-<li>*We do not offer bids from federal or state government.</li>
-
 <li>*We list profitable bids from private sectors, individuals, funding agencies, etc</li>
 
-<li>*Maximum bid awarded via our platform connect is $20m</li>
+<li>Founded in 2013 in NY, USACustomers in 100+ & presence through associates in 25+ countries.
+</li>
 
-<li>Founded in 2013 in NY, USA</li>
 
-<li>Customers in 100+ & presence through associates in 25+ countries.</li>
 </ul>
-
+<h3>THE MAIN ATTRIBUTES OF bidsconnect</h3>
+<ul>
+  <li>There are always 60+ VERIFIED Live Procurement Opportunities available.</li>
+  <li>Every day, more than 25 new opportunities are added.</li>
+  <li>Over 1500 Research Archives</li>
+  <li>Over 5,000 Sources of Information</li>
+  <li>700+ clients (ranging from Fortune 500 enterprises to local businesses worldwide)extensive coverage across more than 15 countries</li>
+  <li>More than 150 Researchers.</li>
+</ul>
       </div>
     
 
