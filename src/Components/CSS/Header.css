@@ -88,3 +88,23 @@
     font-size: 14px; /* Adjust font size for medium screens */
   }
 }
+
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Header styles */
+.header__middle {
+  font-family: 'Montserrat', sans-serif; /* Use the custom font */
+}
+
+/* Search icon using Font Awesome */
+.header__middle__search i {
+  font-family: FontAwesome; /* Include Font Awesome */
+  content: "\f002"; /* Search icon code */
+  color: #ddd; /* Set icon color */
+  margin-right: 5px;
+}
+
+
+
+

@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './Header';
+import Bidlist from './Bidlists'
 
 const Project = () => {
   return (
     <div>
-      <Header/>
-      <h1>Project</h1>
+      
+      <Bidlist/>
     </div>
   )
 }

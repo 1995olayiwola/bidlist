@@ -4,10 +4,13 @@ import TopHeader from './TopHeader';
 import logo from './bidconnect.png';
 import {Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import { CSSTransition } from 'react-transition-group';
 
 
 
 const Header = () => {
+
+    
   const [isMenu, setisMenu] = React.useState(false);
   const [isResponsiveclose, setResponsiveclose] = useState(false);
   const toggleClass = () => {
@@ -48,6 +51,8 @@ const Header = () => {
                 </div>
 
                 <div className="header__middle__menus">
+              
+      
                     <nav className="main-nav " >
 
                     {/* Responsive Menu Button */}
