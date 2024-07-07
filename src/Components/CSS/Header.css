@@ -1,214 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-body {
-  background-color: white;
-  margin: auto;
-  padding: 0px;
-  overflow-x: hidden;
-  background-repeat: repeat;
-  font-family: 'Inter', sans-serif;
-  display: grid;
-}
-.container_header {
-  width: 100%;
-	padding-right:15px;
-	padding-left:15px;
-	margin-right:auto;
-	margin-left:auto;
-  animation: fade-in 0.5s ease-in-out;
-}
-
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.sec__one {
-    position: relative;
-    width: 100%;
-    display: flex;
-    padding: 60px 0;
-}
-.sec__one h1{
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  color: #07a8ff;
-  font-family: 'Inter', sans-serif;
-}
-.navBar .logo img {
-  float: left;
-  max-height: 120px;
-}
-.is-active {
-  color: #ff5800!important;
-}
-
-.navBar .col-md-3 {
-  z-index: 7;
-}
-ul.main-menu {
-  display: inline-flex;
-  list-style: none;
-  margin: 0px auto 0;
-  padding: 0;
-  float: right;
-  z-index: 7;
-}
-ul.main-menu>li.menu-item:first-child {
-  padding-left: 0;
-  margin-left: 0;
-}
-.menu-item {
-  line-height: 23px;
-}
-li {
-  list-style-type: none;
-}
-.menu-item a {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 40px;
-  position: relative;
-  display: block;
-  color: #545050;
-  margin: 27px 17px;
-  text-decoration: none;
-  cursor: pointer;
-}
-.header__middle__logo{
-  width: 20%;
-  display: inline-block;
-  float: left;
-}
-.header__middle__menus {
-  width: 70%;
-  display: inline-block;
-  float: left;
-}
-.menu-item.menu__qqqitem a{
-  margin: 27px 10px;
-}
-.header__middle__search {
-  width: 7%;
-  display: inline-block;
-  float: right;
-  padding: 36px 3px 27px 3px;
-  border-left: 1px solid lavender;
-}
 .header__middle {
   display: flex;
-  width: 100%;
-  float: left;
-  border-bottom: 1px dashed lavender;
-  position: relative;
+  justify-content: space-between; /* Space logo and menu evenly */
+  align-items: center;
+  padding: 15px 20px; /* Add some padding */
+  background-color: #fff; /* Light background */
+  border-bottom: 1px solid #ddd; /* Subtle border */
 }
-.header__middle__logo > a > h1 {
-  color: #07a8ff;
-  text-transform: uppercase;
+
+.header__middle__logo {
+  width: 20%;
+  margin-right: 20px; /* Add some margin for logo spacing */
+}
+
+.header__middle__logo img {
+  max-width: 200px; /* Adjust max-width based on logo size */
+}
+
+.header__middle__menus {
+  display: flex; /* Use flexbox for responsive menu */
+}
+
+.menu-item {
+  font-size: 16px; /* Adjust font size */
+  font-weight: normal;
+  margin-right: 20px; /* Add some margin between menu items */
+}
+
+.menu-item a {
+  color: #333; /* Text color */
   text-decoration: none;
-  margin-top: 33px;
+  transition: color 0.2s ease-in-out; /* Hover effect */
 }
-/* .active{
-  color: #ff1800!important;
-} */
-.header__middle__menus span.text {
-  position: absolute;
-  right: 177px;
-  bottom: 10px;
-  font-size: 14px;
-  color: #ff1800;
+
+.menu-item a:hover {
+  color: #07a8ff; /* Change color on hover */
 }
-.sub__menus__arrows{
-  position: relative;
-}
-.sub__menus__arrows svg, .sub__menus__arrows__full svg{
-  padding-top: 0px;
-  position: absolute;
-  top: 13px;
-}
+
+/* Submenu (example using dropdown) */
 .sub__menus {
-  position: absolute;
-  display: none;
-  background: white;
-  border: 1px solid lavender;
-  width: 227px;
-  left: -17px;
-  padding: 2px 0 0 0;
-  z-index: 1000;
-  box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
+  display: none; /* Initially hidden */
+  position: absolute; /* Position for dropdown */
+  background-color: #fff; /* Background color */
+  border: 1px solid #ddd; /* Border */
+  padding: 10px;
+  z-index: 10; /* Set z-index for layering */
 }
 
-@media (max-width:767px) { 
-  .header__middle .active {color: #ff3d00!important;}
+.menu-item.sub__menus__arrows:hover .sub__menus {
+  display: block; /* Show submenu on hover */
 }
 
-@media (min-width:992px) { 
-  .sub__menus__arrows:hover .sub__menus{
-    display: block;
+.sub__menus a {
+  font-size: 14px;
+  color: #333;
+  padding: 5px 10px; /* Add some padding */
+}
+
+.sub__menus a:hover {
+  color: #07a8ff; /* Hover effect for submenu items */
+}
+/* Existing media query for smaller screens (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  .header__middle__logo {
+    width: 50%; /* Adjust logo width for smaller screens */
+    margin: 10px auto; /* Center logo on smaller screens */
   }
-  .sub__menus__arrows__full:hover .sub__menus{
-    display: block;
-    z-index: 1000000;
+
+  .header__middle__menus {
+    display: none; /* Hide menu initially on smaller screens */
+  }
+
+  /* Add a menu button for smaller screens */
+  .main-nav .menubar__button {
+    display: block!important; /* Show menu button */
+    /* Style the menu button (font size, colors, etc.) */
   }
 }
-.menu-item .sub__menus  a {
-  padding: 7px 0 0px 0;
-  margin: 7px 27px;
-}
-.menu-item:hover > a{
-  color: #07a8ff !important;
-}
-.menu-item .sub__menus li:hover a{
-  color: #07a8ff !important;
-}
 
-.header__middle__logo img{
-  max-width: 207px;
-  margin: 17px 0 0 0;
-}
+/* New media query for medium screens (adjust breakpoint as needed) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__middle__menus {
+    display: flex; /* Show menu on medium screens */
+    justify-content: space-between; /* Space menu items evenly */
+  }
 
-
-@media(max-width:991px){
-.header__middle__logo {width: 77%;}
-.header__middle__menus {width: 20%;}
-.header__middle__logo img {max-width: 197px;margin: 27px 0 0 0;}
-.main-nav .menubar__button:hover {background-color: #f44336;}
-.main-nav .menu-item:hover > a {color: #07a8ff !important}
-.main-nav .menubar__button {
-  display: block!important;
-  float: right;
-  background-color: #080808;
-  color: #fff;
-  padding: 6px 7px;
-  border-radius: 5px;
-  margin: 27px auto 0; 
-  cursor: pointer;
-  position: relative;
-  z-index: 10037;
-}
-.main-nav .menubar__button svg{font-size: 27px;}
-.main-nav ul.menuq2 {
-  display: block!important;
-  position: absolute;
-  left: 0;
-  z-index: 10007;
-  background-color: #d8f1ff;
-  border-bottom: 3px solid #ff3d00;
-  right: 0;
-  padding-bottom: 17px;
-  padding-top: 57px;
-}
-.main-nav .menu-item a {margin: 10px 17px;text-align: center;color: #000000;}
-.main-nav  ul.main-menu {display: none}
-.main-nav .sub__menus__arrows:hover .sub__menus {margin: 0 auto;left: 0;right: 0;}
-.sub__menus__Active{display: block!important;margin: 0 auto;left: 0;right: 0;}
-.sub__menus__Active2{display: block!important;}
-.menus__categorysss{display: none;}
-.menus__categorysss2{display: none;}
-.menu-item .sub__menus__full a {text-align: left;}
-
+  .menu-item {
+    font-size: 14px; /* Adjust font size for medium screens */
+  }
 }
