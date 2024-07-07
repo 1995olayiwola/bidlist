@@ -1,110 +1,142 @@
-.header__middle {
-  display: flex;
-  justify-content: space-between; /* Space logo and menu evenly */
-  align-items: center;
-  padding: 15px 20px; /* Add some padding */
-  background-color: #fff; /* Light background */
-  border-bottom: 1px solid #ddd; /* Subtle border */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header__middle__logo {
-  width: 20%;
-  margin-right: 20px; /* Add some margin for logo spacing */
+body {
+  font-family: cursive;
 }
 
-.header__middle__logo img {
-  max-width: 200px; /* Adjust max-width based on logo size */
-}
-
-.header__middle__menus {
-  display: flex; /* Use flexbox for responsive menu */
-}
-
-.menu-item {
-  font-size: 16px; /* Adjust font size */
-  font-weight: normal;
-  margin-right: 20px; /* Add some margin between menu items */
-}
-
-.menu-item a {
-  color: #333; /* Text color */
+a {
   text-decoration: none;
-  transition: color 0.2s ease-in-out; /* Hover effect */
 }
 
-.menu-item a:hover {
-  color: #07a8ff; /* Change color on hover */
+li {
+  list-style: none;
 }
 
-/* Submenu (example using dropdown) */
-.sub__menus {
-  display: none; /* Initially hidden */
-  position: absolute; /* Position for dropdown */
-  background-color: #fff; /* Background color */
-  border: 1px solid #ddd; /* Border */
-  padding: 10px;
-  z-index: 10; /* Set z-index for layering */
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
 }
 
-.menu-item.sub__menus__arrows:hover .sub__menus {
-  display: block; /* Show submenu on hover */
+.nav-links a {
+  color: #fff;
 }
 
-.sub__menus a {
-  font-size: 14px;
-  color: #333;
-  padding: 5px 10px; /* Add some padding */
+/* LOGO */
+.logo {
+  font-size: 32px;
 }
 
-.sub__menus a:hover {
-  color: #07a8ff; /* Hover effect for submenu items */
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
 }
-/* Existing media query for smaller screens (adjust breakpoint as needed) */
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+.logo img{
+  width:100px;
+  height: 100px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-  .header__middle__logo {
-    width: 50%; /* Adjust logo width for smaller screens */
-    margin: 10px auto; /* Center logo on smaller screens */
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
   }
 
-  .header__middle__menus {
-    display: none; /* Hide menu initially on smaller screens */
+  .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
   }
 
-  /* Add a menu button for smaller screens */
-  .main-nav .menubar__button {
-    display: block!important; /* Show menu button */
-    /* Style the menu button (font size, colors, etc.) */
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
   }
 }
-
-/* New media query for medium screens (adjust breakpoint as needed) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .header__middle__menus {
-    display: flex; /* Show menu on medium screens */
-    justify-content: space-between; /* Space menu items evenly */
-  }
-
-  .menu-item {
-    font-size: 14px; /* Adjust font size for medium screens */
-  }
-}
-
-/* Import the font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
-/* Header styles */
-.header__middle {
-  font-family: 'Montserrat', sans-serif; /* Use the custom font */
-}
-
-/* Search icon using Font Awesome */
-.header__middle__search i {
-  font-family: FontAwesome; /* Include Font Awesome */
-  content: "\f002"; /* Search icon code */
-  color: #ddd; /* Set icon color */
-  margin-right: 5px;
-}
-
-
-
-
