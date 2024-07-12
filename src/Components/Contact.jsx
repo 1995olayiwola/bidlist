@@ -73,7 +73,7 @@ const Contact = () => {
                                   <input type="text" className="inp-contact"  name="user_phone"/>
                               </div>
                               <div className="col-lg-12">
-                                  <label>Subject</label>
+                                  <label>Email</label>
                                   <input type="text" className="inp-contact" name="user_email"/>
                               </div>
                               <div className="col-lg-12">
