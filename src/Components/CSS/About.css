@@ -1,30 +1,136 @@
-*{
+/* Base styles */
+body {
     margin: 0;
     padding: 0;
-}
-
-.about_container{
-   margin: 20px;
-   
-    
-}
-
-.about_first,.about_second,.about_third{
+    font-family: sans-serif;
+  }
+  
+  .about-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid orange;
-    margin-bottom: 10px;
-}
-
-.about_h1{
-    background-color: orange;
+    flex-wrap: wrap; /* Allow sections to flow onto multiple lines if needed */
+    justify-content: space-around; /* Distribute sections evenly */
+    padding: 20px;
+  }
+  
+  .about-section {
+    width: calc(33% - 40px); /* Adjust width based on desired number of columns */
+    margin: 20px;
+    background-color: #f5f5f5; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for animations */
+  }
+  
+  .about-section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .about-h1 {
+    background: linear-gradient(to right, #3399ff, #66b3ff); /* Blue gradient */
     color: white;
-    width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
-}
-.about_p{
-    margin: 10pxnpm start;
-}
+    font-size: 1.2em; /* Adjust heading size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .about-p {
+    margin: 10px 20px;
+    line-height: 1.5; /* Adjust line spacing for readability */
+  }
+  
+  .about-list {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+  }
+  
+  .about-list li {
+    margin-bottom: 5px;
+  }
+  
+  .attribute-count {
+    font-weight: bold;
+    font-size: 1.3em; /* Emphasize attribute counts */
+    margin-right: 5px;
+  }
+  
+  /* Animation styles (replace placeholders with actual animation libraries) */
+  
+  .about-section.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 0; /* Initial opacity for fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .about-section.slide-up {
+    animation: slideUp 0.5s ease-in-out;
+    transform: translateY(20px); /* Initial position for slide-up animation */
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+  }
+  
+  .about-section.grow {
+    animation: grow 0.5s ease-in-out;
+    transform: scale(0.95); /* Initial scale for grow animation */
+  }
+  
+  @keyframes grow {
+    from { transform: scale(0.95); }
+    to { transform: scale(1); }
+  }
+  
+  /* Responsive media queries */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens (tablets) */
+    .about-section {
+      width: calc(50% - 40px); /* Adjust width for two columns */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust layout for even smaller screens (phones) */
+    .about-section {
+      width: 100%; /* Make sections stack vertically */
+    }
+  }
+  
+  /* Animation styles (replace placeholders with actual animation libraries) */
+  
+  .about-section.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 0; /* Initial opacity for fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .about-section.slide-up {
+    animation: slideUp 0.5s ease-in-out;
+    transform: translateY(20px); /* Initial position for slide-up animation */
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+  }
+  
+  .about-section.grow {
+    animation: grow 0.5s ease-in-out;
+    transform: scale(0.95); /* Initial scale for grow animation */
+  }
+  
+  @keyframes grow {
+    from { transform: scale(0.95); }
+    to { transform: scale(1); }
+  }
+  
